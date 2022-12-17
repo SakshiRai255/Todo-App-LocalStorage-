@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body style="background-color:#41393c;">
+    <h1 class="text-light text-center my-3">Wellcome Todo List APP</h1>
+    <div class="container my-5">
+        <div class="input-group flex-nowrap">
+            <input style="background-color:#151825;" id="userInput" type="text" class="form-control text-light border-2" placeholder="Eneter the text here" required>
+
+            <input type="hidden" id="saveHiddenIndexTask">
+
+            <button style="background-color:#151825;" class="input-group-text border-2 text-light"
+                id="addTask">ADD TASK</button>
+            <button style="background-color:#151825; display: none;" class="input-group-text border-2 text-light"
+                id="saveTask">SAVE TASK</button>
+            <button style="background-color:#151825;" class="input-group-text border-2 text-danger"
+                id="deletAllTask">DELETE ALL</button>
+        </div>
+            <div id="taskList" class=" my-5 text-light" style="cursor:pointer">
+
+            </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
